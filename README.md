@@ -1,5 +1,8 @@
 # websockets-demo
 
+Websockets-demo is a demo app that uses websocket connection to retrieve data.
+Project has been developed using VueJS, TypeScript and Google Maps.
+
 ## Project setup
 ```
 npm install
