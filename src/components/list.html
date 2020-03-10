@@ -1,0 +1,26 @@
+<div v-if="initialised">
+    <h3>Scooters list:</h3>
+    <p>Number of scooters displayed: {{ scooters.length }}</p>
+    <ul id="list" class="list-group">
+        <li
+            v-for="(scooter, index) in scooters"
+            :key="index"
+            class="list-group-item list-item"
+        >
+            <p @click="handleClick(scooter.id)" class="pointer">
+                <b>Name: {{ scooter.name }}</b>
+            </p>
+            <p
+                v-bind:class="{
+                    'text-success': scooter.battery_status.percentage_level > charged,
+                    'text-warning': scooter.battery_status.percentage_level >= unloaded &&
+                        scooter.battery_status.percentage_level <= charged,
+                    'text-danger': scooter.battery_status.percentage_level < unloaded
+                }"
+            >Battery: {{ scooter.battery_status.percentage_level }}%</p>
+        </li>
+    </ul>
+</div>
+<div v-else>
+    <h3>Initialising list...</h3>
+</div>

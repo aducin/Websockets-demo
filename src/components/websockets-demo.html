@@ -1,0 +1,12 @@
+<div class="row" id="container">
+    <div class="col-xs-12 col-md-3 pull-right">
+        <scooter-list
+            :scooters="list"
+            :handleClick="handleMarkerClicked"
+            :initialised="initialised"
+        ></scooter-list>
+    </div>
+    <div class="col-xs-12 col-md-9 pull-right">
+        <scooter-map :setMap="setMap"></scooter-map>
+    </div>
+</div>
