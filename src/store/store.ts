@@ -26,7 +26,7 @@ export default new Vuex.Store({
       state.list.push(scooter);
     },
     removeItem(state, scooter: Scooter) {
-      state.list.filter(el => el.id !== scooter.id);
+      state.list = state.list.filter(el => el.id !== scooter.id);
     },
     setInitialList(state, list: Scooter[]) {
       state.list = list;
