@@ -1,5 +1,5 @@
 import { Component, Prop, Vue } from 'vue-property-decorator';
-import WithRender from './map.html';
+import WithRender from './templates/map.html';
 
 @WithRender
 @Component

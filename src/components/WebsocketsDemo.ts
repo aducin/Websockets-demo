@@ -3,7 +3,7 @@ import Map from '../classes/map';
 import ScooterList from './List';
 import ScooterMap from './Map';
 import store from '../store/store';
-import WithRender from './websockets-demo.html';
+import WithRender from './templates/websockets-demo.html';
 import { Scooter, ScooterMarker, SubscribeMessage } from '../interfaces/interfaces';
 import {
     ANIMATION_INIT,

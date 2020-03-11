@@ -1,5 +1,5 @@
 import { Component, Prop, Vue } from 'vue-property-decorator';
-import WithRender from './list.html';
+import WithRender from './templates/list.html';
 import { Scooter } from '../interfaces/interfaces';
 import { BATTERY_CHARGED_PERCENT, BATTERY_UNLOADED_PERCENT } from '../constants/constants';
 
